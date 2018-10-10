@@ -1,0 +1,26 @@
+{
+    "name": "adonis-react-view-provider",
+    "version": "0.1.0",
+    "description": "A provider for AdonisJS that makes a react view renderer avaliable",
+    "main": "index.js",
+    "keywords": [
+        "adonis",
+        "adonisjs",
+        "react",
+        "view",
+        "views",
+        "provider",
+        "renderer"
+    ],
+    "author": "Bruno Cangussu",
+    "license": "MIT",
+    "dependencies": {
+        "@adonisjs/fold": "^4.0.9",
+        "@babel/core": "^7.1.2",
+        "@babel/preset-env": "^7.1.0",
+        "@babel/preset-react": "^7.0.0",
+        "babel-loader": "^8.0.4",
+        "babel-plugin-transform-assets": "^1.0.2",
+        "webpack": "^4.20.2"
+    }
+}

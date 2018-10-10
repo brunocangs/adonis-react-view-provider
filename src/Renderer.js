@@ -97,7 +97,7 @@ const htmlTemplate = `<!DOCTYPE html>
     <title>{{title}}</title>
 </head>
 <body>
-    <div class="root">{{content}}</div>
+    <div id="root">{{content}}</div>
     <script>
         window.props = {{stringifiedProps}}
     </script>

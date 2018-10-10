@@ -1,6 +1,6 @@
 {
     "name": "adonis-react-view-provider",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "A provider for AdonisJS that makes a react view renderer avaliable",
     "main": "index.js",
     "keywords": [

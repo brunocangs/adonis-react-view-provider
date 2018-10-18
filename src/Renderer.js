@@ -55,6 +55,7 @@ class ReactRenderer {
         this.template = config.template !== undefined ? config.template : htmlTemplate;
         this.title = config.title !== undefined ? config.title : 'Adonis React App';
     }
+
     replaceOnTemplate (options) {
         let template = this.template;
         for (let key in options) {
@@ -62,6 +63,7 @@ class ReactRenderer {
         }
         return template;
     }
+
     async render (viewName = 'main') {
         // Remove websocket circular references
         const {req: {client, connection, socket, _readableState, ...request}} = this;
@@ -75,9 +77,9 @@ class ReactRenderer {
         let content;
         if (React.isValidElement(View)) {
             View = React.cloneElement(View, {request: request, ...globals});
-            content = method(eval(this.helper.parseCode('<Wrapper>{View}</Wrapper>')));
+            content = method(eval(this.helper.parseCode('<Wrapper request={request} {...globals}>{View}</Wrapper>')));
         } else {
-            content = method(eval(this.helper.parseCode('<Wrapper><View request={request} {...globals}/></Wrapper>')));
+            content = method(eval(this.helper.parseCode('<Wrapper request={request} {...globals}><View request={request} {...globals}/></Wrapper>')));
         }
         return this.replaceOnTemplate({
             content,

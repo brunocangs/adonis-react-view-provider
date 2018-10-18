@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 class ReactViewProvider extends ServiceProvider {
     register () {
-        this.app.singleton('Adonis/Src/ReactView', (app) => {
+        this.app.singleton('ReactView', (app) => {
             const Config = app.use('Adonis/Src/Config');
             const Helpers = app.use('Adonis/Src/Helpers');
             return new ReactRenderer(Helpers, Config);
@@ -33,7 +33,7 @@ class ReactViewProvider extends ServiceProvider {
     boot () {
         const {app} = this;
         const Context = app.use('Adonis/Src/HttpContext');
-        const Renderer = app.use('Adonis/Src/ReactView');
+        const Renderer = app.use('ReactView');
         const Helpers = app.use('Adonis/Src/Helpers');
         const Config = app.use('Adonis/Src/Config');
         

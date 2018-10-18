@@ -1,6 +1,6 @@
 {
     "name": "adonis-react-view-provider",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "A provider for AdonisJS that makes a react view renderer avaliable",
     "main": "index.js",
     "keywords": [
@@ -14,6 +14,10 @@
         "reactjs",
         "ssr"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/brunocangs/adonis-react-view-provider.git"
+    },
     "author": "Bruno Cangussu",
     "license": "MIT",
     "dependencies": {

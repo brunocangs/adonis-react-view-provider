@@ -93,7 +93,7 @@ These are the default configs
     useCustomWrapper: false, 
     wrapperFile: 'wrapper', 
     title: 'Adonis React App',
-    htmlTemplate: `<!DOCTYPE html>
+    template: `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
@@ -134,7 +134,7 @@ The name of the file that will be used as a wrapper, should useCustomWrapper be 
 
 The page title to your application.
 
-- htmlTemplate
+- template
 
 The template on wich the server-side rendering will be done. You can change it to add your meta tags or set a static title on the page. It is not recommended to remove anything from the `body`, as all `script` tags are necessary for the rendering.
 

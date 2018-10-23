@@ -6,7 +6,9 @@ This is a package to enable usage of react with [AdonisJS](https://adonisjs.com/
 
 First, download the package by running
 
-`npm install -s adonis-react-view-provider`
+`npm install -s adonis-react-view-provider react`
+
+***Note:*** React is a peer dependency in order to facilitate versioning
 
 Then, on your `app.js` file in the `start` folder, add
 
@@ -84,6 +86,7 @@ It functions exactally the same as the default API in the sense that you are not
 You can use a `react.js` config file in the `config` folder to alter some of the package's functionality.
 
 These are the default configs
+
 ```javascript
 {
     toStatic: false, 

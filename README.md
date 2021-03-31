@@ -1,3 +1,5 @@
+# THIS REPO/PACKAGE IS NOT ACTIVELLY MAINTAINED
+
 ## About
 
 This is a package to enable usage of react with [AdonisJS](https://adonisjs.com/) APIs.
